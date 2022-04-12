@@ -3,15 +3,17 @@ import { Avatar, Button, FormControlLabel, Grid, Link, Paper, TextField, Typogra
 import { LockOutlined } from '@mui/icons-material'
 import { Checkbox } from '@mui/material'
 import bckgrdImage from '../Assets/cool-background.png'
-
+import logo from '../Assets/TT.png'
 
 
 const Login=()=> {
     const paperStyle = {padding :20, height :'70vh',width:280, margin :"20px auto"}
     const avatarStyle ={backgroundColor : '#1976d2'}
-    const btnstyle ={margin:'8px 0px'}
+    const btnstyle ={margin:'10px 0px'}
+    const logostyle ={width:'15vh', margin:'0px 90% 0px 0px'}
 return( 
 <div className='loginPage' style={{ backgroundImage: `url(${bckgrdImage})`}}>
+    <img src={logo} style={logostyle}/>
     <Grid>
        <Paper elevation= {10} style={paperStyle}>
         <Grid align = 'center' >
